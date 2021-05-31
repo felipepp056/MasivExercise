@@ -1871,3 +1871,38 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2021-05-30 22:25:30,811 [Worker-34: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2021-05-30 22:25:30,813 [Worker-34: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-05-30 22:25:30,813 [Worker-34: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edgar\OneDrive\Documentos\springboot\workspace\spring-boot-redis-master\src\test\resources
+2021-05-30 22:38:30,704 [Worker-49: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-30 22:38:30,705 [Worker-49: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-30 22:38:30,706 [Worker-49: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-30 22:38:30,708 [Worker-49: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-30 22:38:30,708 [Worker-49: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edgar\OneDrive\Documentos\springboot\workspace\spring-boot-redis-master\src\test\resources
+2021-05-30 22:41:25,072 [Worker-39: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-30 22:41:25,073 [Worker-39: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-30 22:41:25,075 [Worker-39: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-30 22:41:25,076 [Worker-39: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-30 22:41:25,077 [Worker-39: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edgar\OneDrive\Documentos\springboot\workspace\spring-boot-redis-master\src\test\resources
+2021-05-30 22:46:01,730 [Worker-55: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-30 22:46:01,731 [Worker-55: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-30 22:46:01,733 [Worker-55: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-30 22:46:01,735 [Worker-55: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-30 22:46:01,735 [Worker-55: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edgar\OneDrive\Documentos\springboot\workspace\spring-boot-redis-master\src\test\resources
+2021-05-30 22:48:09,017 [Worker-61: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-30 22:48:09,018 [Worker-61: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-30 22:48:09,020 [Worker-61: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-30 22:48:09,022 [Worker-61: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-30 22:48:09,022 [Worker-61: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edgar\OneDrive\Documentos\springboot\workspace\spring-boot-redis-master\src\test\resources
+2021-05-30 22:52:38,173 [Worker-66: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-30 22:52:38,174 [Worker-66: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-30 22:52:38,175 [Worker-66: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-30 22:52:38,177 [Worker-66: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-30 22:52:38,177 [Worker-66: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edgar\OneDrive\Documentos\springboot\workspace\spring-boot-redis-master\src\test\resources
+2021-05-30 22:58:53,881 [Worker-71: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-30 22:58:53,882 [Worker-71: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-30 22:58:53,884 [Worker-71: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-30 22:58:53,886 [Worker-71: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-30 22:58:53,886 [Worker-71: Launching spring-boot-redis-master - SpringBootRedisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edgar\OneDrive\Documentos\springboot\workspace\spring-boot-redis-master\src\test\resources
+2021-05-30 23:03:50,346 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-30 23:03:50,347 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-30 23:03:50,349 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-30 23:03:50,351 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-05-30 23:03:50,351 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\edgar\OneDrive\Documentos\springboot\workspace\spring-boot-redis-master\src\test\resources

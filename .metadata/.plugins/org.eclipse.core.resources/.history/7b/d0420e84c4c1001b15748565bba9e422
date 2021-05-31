@@ -140,23 +140,23 @@ public class RoulleteRepository implements RedisRepository {
 	
 	public void setColorProfit(Player actual,int result) {
 		if(actual.getBet().equalsIgnoreCase("Rojo") || actual.getBet().equalsIgnoreCase("Negro") ) {
-			 if(result%2==0 && actual.getBet().equalsIgnoreCase("Rojo")) {
+			 if(result%2==0 || actual.getBet().equalsIgnoreCase("Rojo")) {
 				 double profit = actual.getMoney()*1.8 - actual.getMoney();
 				 actual.setProfit(profit);
 				 double actualMoney = actual.getMoney() + actual.getProfit();
 				 actual.setMoney(actualMoney);
-			 }else if(result%2==0 && actual.getBet().equalsIgnoreCase("Negro")){
+			 }else if(result%2==0 || actual.getBet().equalsIgnoreCase("Negro")){
 				 double loss = -1*actual.getMoney();
 				 actual.setProfit(loss);
 				 double actualMoney = actual.getMoney() + actual.getProfit();
 				 actual.setMoney(actualMoney); 
 			 }
-			 else if(result%2!=0 && actual.getBet().equalsIgnoreCase("Rojo")){
+			 else if(result%2!=0 || actual.getBet().equalsIgnoreCase("Rojo")){
 				 double loss = -1*actual.getMoney();
 				 actual.setProfit(loss);
 				 double actualMoney = actual.getMoney() + actual.getProfit();
 				 actual.setMoney(actualMoney);
-			 }else if(result%2!=0 && actual.getBet().equalsIgnoreCase("Negro")){
+			 }else if(result%2!=0 || actual.getBet().equalsIgnoreCase("Negro")){
 				 double profit = actual.getMoney()*1.8 - actual.getMoney();
 				 actual.setProfit(profit);
 				 double actualMoney = actual.getMoney() + actual.getProfit();

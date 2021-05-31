@@ -70,7 +70,7 @@ public class RoulleteController {
     		if(roullete.getStatus() == 1) {
     			roulleteRepository.playRoullete(id);
     			int result = roulleteRepository.giveResult(id);
-    			String message = "El valor obtenido en la ruleta fue: "+ result;
+    			String message = "The value obtained from the roullete was: "+ result;
     			resultArray.add(message);
     			roulleteRepository.setPlayersProfit(id, result);
     			ArrayList<Player> players = roulleteRepository.givePlayers(id);

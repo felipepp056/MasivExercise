@@ -70,7 +70,7 @@ public class RoulleteController {
     		if(roullete.getStatus() == 1) {
     			roulleteRepository.playRoullete(id);
     			int result = roulleteRepository.giveResult(id);
-    			String message = "El valor obtenido en la ruleta fue: "+ result;
+    			String message = "el valor obtenido por la ruleta fue: "+ result;
     			resultArray.add(message);
     			roulleteRepository.setPlayersProfit(id, result);
     			ArrayList<Player> players = roulleteRepository.givePlayers(id);
@@ -79,7 +79,8 @@ public class RoulleteController {
     		}
     	}
     	return resultArray;		
-    }  
+    }
+    
     // 5 find all the roulletes
     @GetMapping("/all")
     public Map<String, Roullete> findAll() {
@@ -91,4 +92,17 @@ public class RoulleteController {
     	roulleteRepository.deletePlayers(id);
     	roulleteRepository.delete(id);
     }
+    /*
+     * 
+    @GetMapping("/students/{id}")
+    public Roullete findById(@PathVariable String id) {
+        return roulleteRepository.findById(id);
+    }
+    @DeleteMapping("/students/{id}")
+    public void deleteStudent(@PathVariable String id) {
+    	roulleteRepository.delete(id);
+    }
+    
+    */
+    
 }
