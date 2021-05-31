@@ -40,12 +40,8 @@ public class Player implements Serializable {
     // -----------------------------------------------------------------
 	
 	
-	 /**
-     * Constructs a new Player object. 
-     * @param id ID of the player.
-     * @param bet Bet of the player.
-     * @param money Money of the player for the game.
-     * @param profit Profit of the player because of the game
+	/**
+     * Constructor that creates a new player with its atributes
      */
 	public Player(String id, String bet, double money, double profit) {
 		this.id = id;

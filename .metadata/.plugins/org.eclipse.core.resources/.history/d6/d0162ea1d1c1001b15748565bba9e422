@@ -1,8 +1,3 @@
-/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Proyect Roullete masiv
- * Author: Edgar Felipe Peña Porras - 30/05/2021 
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
- */
 package dev.abel.springbootredis.controller;
 
 
@@ -10,79 +5,48 @@ import dev.abel.springbootredis.domain.Player;
 import dev.abel.springbootredis.domain.Roullete;
 import dev.abel.springbootredis.repository.RoulleteRepository;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.ArrayList;
 import java.util.Map;
 
-/**
- * This class represent the roullete controller for the API
- */
 @RestController
 public class RoulleteController {
-	
-	// -----------------------------------------------------------------
-    // Atributes
-    // -----------------------------------------------------------------
-
-	/**
-     * Represents the roullete repository.
-     */
     private RoulleteRepository roulleteRepository;
     
-    // -----------------------------------------------------------------
-    // Constructor
-    // -----------------------------------------------------------------
-	
-	
-	 /**
-     * Constructs a new roulette controller object. 
-     * @param roulleteRepository RoulleteRepository to manage the database.
-     */
     public RoulleteController(RoulleteRepository roulleteRepository) {
         this.roulleteRepository = roulleteRepository;
     }
-    
-    // -----------------------------------------------------------------
-    // Methods
-    // -----------------------------------------------------------------
 
-    /**
-     * endpoint to create a new roulette game. 
-     * @param roullete roulette to be created.
-     * @return id of the roulette created.
-     */
+    
+    
+   
+    //1  create roullete and returns the ID
     @PostMapping("/create")
     public String createRoullete(@RequestBody Roullete roullete) {
+    	//1 create roullete and return id
     	roulleteRepository.save(roullete);
-    	roulleteRepository.initializePlayers(roullete.getId());
-    	
+    	roulleteRepository.inizialicePlayers(roullete.getId());
     	return roulleteRepository.getId(roullete);
     }
     
-    /**
-     * endpoint to active the status of a given roulette. 
-     * @param id ID of the roulette to be activated.
-     * @return message alerting the status of the request.
-     */
+    
+    //2  open roullete and return the confirmation of the operation
     @GetMapping("/open/{id}")
     public String openRoullete(@PathVariable String id) {
     	String message = "";
     	if(roulleteRepository.findById(id) != null) {
     		roulleteRepository.changeStatus(id, 1);
-    		message = "estado abierto Existosa";
+    		message = "Existosa";
     	}else {
-    		message = "estado abierto Denegada";
+    		message = "Denegada";
     	}
-
-        return message;
+    	//1 find roullete if not return denegado
+    	//2 change status of roullete
+        return message;//roulleteRepository.findById(id);
     }
     
-    /**
-     * endpoint to create a new player with its important values. 
-     * @param playerID ID of the new player.
-     * @param betType type of bet made by the new player (numeric 0-36) or (color: Negro - Rojo).
-     * @param betValue value of money givend by the new player for the game.
-     * @param rouleteID ID of the roulette that is going to add a new player.
-     */
+    //3 bet create a bet with the id of the user
+    
     @PutMapping("/bet/{rouleteID}/{betType}/{betValue}")
     public void betRoullete(@RequestHeader String playerID,@PathVariable String betType,@PathVariable double betValue,@PathVariable String rouleteID ) {
     	Roullete roullete = roulleteRepository.findById(rouleteID);
@@ -92,13 +56,12 @@ public class RoulleteController {
     			roulleteRepository.addPlayer(rouleteID, player);
     		}
     	}
+    	//1 find roullete 
+    	//2 check status
+    	//3 add new player with its components
     }
     
-    /**
-     * endpoint to close a roulette game where the result and the profit of the plyaers is given, the the roulette status will be closed. 
-     * @param id ID of the roulette to be closed.
-     * @return ArrayList with the result of the roulette game.
-     */
+    //4  close roullete returns the result of the game
     @GetMapping("/close/{id}")
     public ArrayList<Object> playGame(@PathVariable String id) {
     	ArrayList<Object> resultArray = new ArrayList<Object>();
@@ -115,24 +78,14 @@ public class RoulleteController {
     			roulleteRepository.restartRoullete(id);
     		}
     	}
-    	
     	return resultArray;		
     }  
-
-    /**
-     * endpoint to give all the roulettes with their important information. 
-     * @return Map of the atributes of the roulettes created.
-     */
+    // 5 find all the roulletes
     @GetMapping("/all")
     public Map<String, Roullete> findAll() {
-    	
         return roulleteRepository.findAll();
     }
     
-    /**
-     * endpoint to delete a roulette. 
-     * @param id ID of the roulette to be deleted.
-     */
     @DeleteMapping("/delete/{id}")
     public void deleteStudent(@PathVariable String id) {
     	roulleteRepository.deletePlayers(id);

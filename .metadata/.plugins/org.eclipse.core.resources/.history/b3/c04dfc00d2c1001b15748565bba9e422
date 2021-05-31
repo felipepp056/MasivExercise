@@ -68,9 +68,9 @@ public class RoulleteController {
     	String message = "";
     	if(roulleteRepository.findById(id) != null) {
     		roulleteRepository.changeStatus(id, 1);
-    		message = "estado abierto Existosa";
+    		message = "Existosa";
     	}else {
-    		message = "estado abierto Denegada";
+    		message = "Denegada";
     	}
 
         return message;
