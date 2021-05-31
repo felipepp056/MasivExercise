@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="dev.abel.springbootredis.repository.RoulleteRepository"/>
+    <fullyQualifiedTypeName name="dev.abel.springbootredis.domain.Roullete"/>
+    <fullyQualifiedTypeName name="dev.abel.springbootredis.domain.Player"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+</qualifiedTypeNameHistroy>

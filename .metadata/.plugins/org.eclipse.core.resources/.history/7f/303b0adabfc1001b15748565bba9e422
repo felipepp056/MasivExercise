@@ -1,0 +1,53 @@
+package dev.abel.springbootredis.domain;
+
+import java.io.Serializable;
+
+public class Player implements Serializable {
+
+
+	private String id;
+	private String bet;
+	private double profit;
+	private double betValue;
+	
+	public Player(String id, String bet, double betValue, double profit) {
+		this.id = id;
+		this.bet = bet;
+		this.profit = profit;
+		this.setBetValue(betValue);
+	}
+	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	
+	public String getBet() {
+		return bet;
+	}
+	public void setBet(String bet) {
+		this.bet = bet;
+	}
+
+	public double getProfit() {
+		return profit;
+	}
+
+	public void setProfit(double profit) {
+		this.profit = profit;
+	}
+
+	public double getBetValue() {
+		return betValue;
+	}
+
+	public void setBetValue(double betValue) {
+		this.betValue = betValue;
+	}
+
+	
+	
+
+}

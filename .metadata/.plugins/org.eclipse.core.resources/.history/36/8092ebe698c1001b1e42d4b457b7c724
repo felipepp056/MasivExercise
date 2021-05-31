@@ -1,0 +1,14 @@
+package dev.abel.springbootredis.repository;
+
+import dev.abel.springbootredis.domain.Roullete;
+
+import java.util.Map;
+import java.util.Set;
+
+public interface RedisRepository {
+    Map<String, Roullete> findAll();
+    Roullete findById(String id);
+    void save(Roullete roullete);
+    void delete(String id);
+    Set getId(Roullete roullete);
+}

@@ -1,0 +1,30 @@
+package dev.abel.springbootredis.domain;
+
+public class Player {
+	private long id;
+	private String bet;
+	private float profit;
+	
+	
+	public float getProfit() {
+		return profit;
+	}
+	public void setProfit(float profit) {
+		this.profit = profit;
+	}
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getBet() {
+		return bet;
+	}
+	public void setBet(String bet) {
+		this.bet = bet;
+	}
+	
+	
+
+}

@@ -1,0 +1,5 @@
+package dev.abel.springbootredis.domain;
+
+public class Players {
+
+}

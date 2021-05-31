@@ -1,0 +1,23 @@
+package dev.abel.springbootredis.domain;
+
+public class Players {
+	private long id;
+	private float profit;
+	
+	
+	public float getProfit() {
+		return profit;
+	}
+	public void setProfit(float profit) {
+		this.profit = profit;
+	}
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	
+	
+
+}

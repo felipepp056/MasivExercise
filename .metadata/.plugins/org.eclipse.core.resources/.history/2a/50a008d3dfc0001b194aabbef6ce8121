@@ -1,0 +1,12 @@
+package dev.abel.springbootredis.domain;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public class Roullete implements Serializable {
+    private long id;
+    private int status;
+    private int result;
+    private ArrayList<Players> players;
+    
+}

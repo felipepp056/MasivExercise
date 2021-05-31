@@ -1,0 +1,48 @@
+package dev.abel.springbootredis.repository;
+
+import dev.abel.springbootredis.domain.Roullete;
+import org.springframework.data.redis.core.HashOperations;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Repository;
+
+import javax.annotation.PostConstruct;
+import java.util.Map;
+import java.util.UUID;
+
+@Repository
+public class RoulleteRepository implements RedisRepository {
+    private static final String KEY = "Roullete";
+
+    private RedisTemplate<String, Roullete> redisTemplate;
+    private HashOperations hashOperations;
+
+    public RoulleteRepository(RedisTemplate<String, Roullete> redisTemplate) {
+        this.redisTemplate = redisTemplate;
+    }
+
+    @PostConstruct
+    private void init() {
+        hashOperations = redisTemplate.opsForHash();
+    }
+
+    @Override
+    public Map<String, Roullete> findAll() {
+        return hashOperations.entries(KEY);
+    }
+
+    @Override
+    public Roullete findById(String id) {
+        return (Roullete) hashOperations.get(KEY, id);
+    }
+
+    @Override
+    public void save(Roullete roullete) {
+        hashOperations.put(KEY, UUID.randomUUID().toString(), roullete);
+    }
+
+    @Override
+    public void delete(String id) {
+        hashOperations.delete(KEY, id);
+    }
+
+}

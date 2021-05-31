@@ -1,0 +1,37 @@
+package dev.abel.springbootredis.controller;
+
+
+import dev.abel.springbootredis.domain.Roullete;
+import dev.abel.springbootredis.repository.RoulleteRepository;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
+
+@RestController
+public class RoulleteController {
+    private RoulleteRepository roulleteRepository;
+    
+    public RoulleteController(RoulleteRepository roulleteRepository) {
+        this.roulleteRepository = roulleteRepository;
+    }
+
+    @GetMapping("/students")
+    public Map<String, Roullete> findAll() {
+        return roulleteRepository.findAll();
+    }
+
+    @GetMapping("/students/{id}")
+    public Student findById(@PathVariable String id) {
+        return roulleteRepository.findById(id);
+    }
+
+    @PostMapping("/students")
+    public void createStudent(@RequestBody Roullete roullete) {
+    	roulleteRepository.save(roullete);
+    }
+
+    @DeleteMapping("/students/{id}")
+    public void deleteStudent(@PathVariable String id) {
+    	roulleteRepository.delete(id);
+    }
+}
